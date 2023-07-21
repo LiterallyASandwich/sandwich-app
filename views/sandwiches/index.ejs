@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sandwiches</h1>
+    <ul>
+      <% sandwiches.forEach(function(s) { %>
+        <li>
+          <a href="/sandwiches/ <%= s.id %>"><%= s.sandwich %></a>
+         
+        </li>
+      <% }); %>
+
+    </ul>
+    <h3><a href="/sandwiches/rest">Add Sandwich Restarant</h3>
+    <h3><a href="/sandwiches/pics">Sandwich Pictures</h3>
+  </body>
+  
+</html>
