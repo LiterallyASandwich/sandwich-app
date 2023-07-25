@@ -7,3 +7,5 @@ const sandwichSchema = new Schema({
   }, {
     timestamps: true
   });
+
+  module.exports = mongoose.model('Sandwich', sandwichSchema);
