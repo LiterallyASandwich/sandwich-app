@@ -1,5 +1,48 @@
 <%- include('../partials/header') %>
-<body>
-    <h3><%=sandwich.sandwich %></h3>
-<body>
+
+
+
+<section id="show-page">
+    <div><b>Storename: </b></div>
+    <div><%= sandwich.name %></div>
+    <br>
+    <div><b>State: </b></div>
+    <div><%= sandwich.state %></div>
+  <br>
+    <div><b>Sandwiches:</b></div>
+    
+
+    <% if (sandwich.types.length) { %>
+        <table>
+            
+                
+    <tbody>
+        
+        <div><% sandwich.types.forEach(function(t) { %>
+        <td><%= t.sand %></td>
+         <td>   
+            <form action="/sandwiches/<%= sandwich._id %>/types/<%= t._id %>?_method=DELETE" method="POST">
+              <button type="submit">X</button>
+            </form>
+            
+        </td>
+        <% }); %>
+    </div>
+
+    </tbody>
+    <% } else { %>
+        <h5>No Sandwiches Yet</h5>
+      <% } %>
+        </table>
+</section>
+
+
+<br>
+<h3>Add Sandwich Type:</h3>
+<form id="add-type-form"  method="POST"
+    action="/sandwiches/<%= sandwich._id %>/types">
+    <label>Input Sandwich:</label>
+    <input type="text" name="sand">
+    <button type="submit">Add Sandwich Type</button>
+</form>
 <%- include('../partials/footer') %>

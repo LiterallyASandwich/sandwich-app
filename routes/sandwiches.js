@@ -6,7 +6,7 @@ const ensureLoggedIn = require('../config/ensureLoggedIn');
 
 router.get('/', sandwichesCtrl.index);
 
-router.get('/new', ensureLoggedIn, sandwichesCtrl.new);
+router.get('/rest', ensureLoggedIn, sandwichesCtrl.new);
 
 router.get('/:id', sandwichesCtrl.show);
 

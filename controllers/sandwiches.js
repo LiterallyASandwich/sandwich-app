@@ -13,7 +13,7 @@ async function index(req, res) {
 }
 
 async function show(req, res) {
-    const sandwich = await Sandwich.findById(req.params.id).populate('cast');
+    const sandwich = await Sandwich.findById(req.params.id);
     res.render('sandwiches/show', { title: 'Sandwich Location Details', sandwich });
 }
 
@@ -23,14 +23,14 @@ async function create(req, res) {
         if (req.body[key] === '') delete req.body[key];
       }
       try {
-        const movie = await Movie.create(req.body);
-        res.redirect(`/movies/${movie._id}`);
+        const sandwich = await Sandwich.create(req.body);
+        res.redirect(`/sandwiches`);
     } catch (err) {
         console.log(err);
-        res.render('movies/new', { errorMsg: err.message });
+        res.render('sandwiches/rest', { errorMsg: err.message });
       }
     }
 
     function newSandwich(req, res) {
-  res.render('sandwich/new', { title: 'Add Sandwich', errorMsg: ''});
+  res.render('sandwiches/rest', { title: 'Add Sandwich', errorMsg: ''});
     }

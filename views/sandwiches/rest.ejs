@@ -1,5 +1,15 @@
 <%- include('../partials/header') %>
-<body>
-    <form action="/index">
-<body>
+<form id="new-form" action="/sandwiches" method="POST">
+    <label>Store Name:</label>
+    <input type="text" name="name">
+    <label>State:</label>
+    <select name="state">
+        <option value="LA">LA</option>
+        <option value="MS">MS</option>
+        <option value="AR">AR</option>
+        <option value="OK">OK</option>
+        <option value="TX">TX</option>
+    </select>
+    <button type="submit">Add Store</button>
+</form>
 <%- include('../partials/footer') %>
