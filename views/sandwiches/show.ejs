@@ -19,8 +19,8 @@
     <tbody>
         
         <div><% sandwich.types.forEach(function(t) { %>
-        <td><%= t.sand %></td>
-         <td>   
+        <td><%= t.sand %>
+          
             <form action="/sandwiches/<%= sandwich._id %>/types/<%= t._id %>?_method=DELETE" method="POST">
               <button type="submit">X</button>
             </form>

@@ -1,12 +1,29 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color:rgb(128, 128, 0, 0.3)
+  
 }
+
 
 a {
-  color: #00B7FF;
+  color: rgb(30, 130, 212);
+  background-color: rgba(88, 153, 196, 0.1);
+  border: 1px solid rgba(56, 83, 175, 0.3);
+  border-radius: 5px;
 }
 
+h1 {
+  background-color: rgb(165, 42, 42, 0.8);
+  border: 2px solid rgb(128, 128, 128, 0.3);
+  border-radius: 5px;
+}
+
+td {
+  background-color: rgb(210, 255, 47, 0.8);
+  border: 2px solid rgb(128, 128, 128, 0.3);
+  border-radius: 5px;
+}
 
 .login {
   display: flex;
@@ -18,3 +35,4 @@ a {
 .login img {
   height: 30px;
 }
+

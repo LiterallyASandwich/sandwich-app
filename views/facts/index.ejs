@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+<ul>
+    
+    <% facts.forEach(function(f) { %>
+        <br>
+    <li>
+        <td><%= f.content %></td>
+    </li>
+    <% }); %>
+</ul>
+<br>
+<h3>Add Sandwich Fact:</h3>
+<form id="add-fact-form"  method="POST"
+    action="/facts">
+    <label>Input Sandwich Fact:</label>
+    <input type="text" name="content">
+    <button type="submit">Add Sandwich Fact</button>
+</form>
+<%- include('../partials/footer') %>

@@ -8,10 +8,11 @@ require('./config/database');
 
 // Require the app's Mongoose models
 const Sandwich = require('./models/sandwich');
-
+const Fact = require('.models/fact');
 // Example CRUD
 
 // Top-level await (using await outside of an async function)
 // has been available since Node v14.8
 let sandwiches = await Sandwich.find({});
+let facts = await Fact.find({});
 console.log(sandwiches);

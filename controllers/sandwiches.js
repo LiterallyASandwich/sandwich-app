@@ -4,6 +4,7 @@ module.exports= {
     index,
     show,
     create,
+    
     new: newSandwich
 };
 
@@ -12,10 +13,14 @@ async function index(req, res) {
     res.render('sandwiches/index', { title: "Sandwich Locations", sandwiches});
 }
 
+
+
 async function show(req, res) {
     const sandwich = await Sandwich.findById(req.params.id);
     res.render('sandwiches/show', { title: 'Sandwich Location Details', sandwich });
 }
+
+
 
 async function create(req, res) {
     req.body.nowShowing = !!req.body.nowShowing;
