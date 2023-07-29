@@ -16,7 +16,8 @@ Well not anymore! This app allows fellow sandwich enjoyers to post the location 
 
 # Getting Started
 
-[Click to Play Connect Four!](your deployment url here)
+[Try Le App](https://literallyasandwich.github.io/sandwich-app/)
+[Trello](https://trello.com/invite/b/q1F1Rgru/ATTI7d78601e713b0de83de1c0282f2495926A28648C/project-2)
 
 # Next Steps
 
