@@ -16,7 +16,8 @@ Well not anymore! This app allows fellow sandwich enjoyers to post the location 
 
 # Getting Started
 
-[Try Le App](https://literallyasandwich.github.io/sandwich-app/)
+[Try Le App](https://rocky-garden-32582-105c945a11cd.herokuapp.com/sandwiches)
+
 [Trello](https://trello.com/invite/b/q1F1Rgru/ATTI7d78601e713b0de83de1c0282f2495926A28648C/project-2)
 
 # Next Steps
